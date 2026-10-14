@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotem — Taste it from every angle</title>
+  <meta name="description" content="Hotem — bold Japanese comfort food. Ramen, bao, katsu and mochi, made to be seen from every angle.">
+  <meta name="theme-color" content="#f6ecdf">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght@9..144,400;9..144,500&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-ramen.webp">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="is-loading">
+
+  <!-- Intro loader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__stamp">食</span>
+      <span class="loader__word"><span>H</span><span>o</span><span>t</span><span>e</span><span>m</span></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="nav" id="top">
+    <a class="logo" href="#/" aria-label="Hotem home">
+      <span class="logo__word">Hotem</span>
+      <span class="logo__mark" aria-hidden="true">食</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#menu" data-section="menu">Menu</a>
+      <a href="#story" data-section="story">Story</a>
+      <a href="#reserve" data-section="reserve">Reservations</a>
+      <a href="#order" data-action="cart">Order</a>
+      <span class="nav__ink" aria-hidden="true"></span>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" data-action="search" aria-label="Search the menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      </button>
+      <button class="btn btn--primary btn--sm cart-btn" data-action="cart">
+        <span>Order online</span>
+        <span class="cart-btn__count" aria-label="items in order">0</span>
+      </button>
+      <button class="icon-btn burger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="home" class="home">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__copy">
+        <p class="eyebrow reveal-up">Good food brings<br>people closer</p>
+        <h1 class="hero__title" aria-label="Taste it from every angle.">
+          <span class="line"><span class="word">Taste</span> <span class="word">it</span> <span class="word">from</span></span>
+          <span class="line"><span class="word">every</span> <span class="word">angle.</span></span>
+        </h1>
+        <p class="hero__lede reveal-up">Bold flavours. Thoughtful ingredients.<br>A fuller experience, in every bite.</p>
+        <div class="hero__cta reveal-up">
+          <a class="btn btn--primary btn--lg" href="#menu" data-section="menu">
+            Explore the Hotem menu
+            <svg class="arrow" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#reserve" data-section="reserve">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/><path d="M8 14h.01M12 14h.01M16 14h.01M8 17h.01M12 17h.01" stroke-width="2.2" stroke-linecap="round"/></svg>
+            Book a table
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__visual">
+        <div class="particles" aria-hidden="true"></div>
+        <div class="rotator rotator--hero" data-rotator>
+          <div class="rotator__float">
+            <div class="rotator__tilt">
+              <img src="assets/img/hero-ramen.webp" alt="A bowl of miso ramen with chopsticks lifting noodles, soft egg, chashu and nori" width="680" height="730" draggable="false">
+              <span class="rotator__shine"></span>
+            </div>
+          </div>
+          <span class="rotator__shadow"></span>
+        </div>
+      </div>
+
+      <div class="hero__side" aria-hidden="true">
+        <p class="vertical-copy">Same<br>dish<br>different<br>stories</p>
+        <span class="vertical-line"></span>
+      </div>
+
+      <button class="drag-badge" data-action="spin" aria-label="Spin the bowl">
+        <svg viewBox="0 0 120 120" class="drag-badge__ring">
+          <defs><path id="ring" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs>
+          <text><textPath href="#ring">DRAG TO ROTATE · DRAG TO ROTATE · </textPath></text>
+        </svg>
+        <span class="drag-badge__dash"></span>
+      </button>
+    </section>
+
+    <!-- Signature strip -->
+    <section class="signature" aria-label="Signature dishes">
+      <div class="signature__inner"></div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Ramen</span><i>食</i><span>Bao</span><i>食</i><span>Katsu</span><i>食</i><span>Mochi</span><i>食</i><span>Gyoza</span><i>食</i><span>Yuzu</span><i>食</i>
+        <span>Ramen</span><i>食</i><span>Bao</span><i>食</i><span>Katsu</span><i>食</i><span>Mochi</span><i>食</i><span>Gyoza</span><i>食</i><span>Yuzu</span><i>食</i>
+      </div>
+    </div>
+
+    <!-- Menu -->
+    <section class="menu" id="menu">
+      <div class="menu__bar">
+        <div class="filters" role="tablist" aria-label="Filter menu">
+          <span class="filters__pill" aria-hidden="true"></span>
+          <button role="tab" class="filter is-active" data-filter="all" aria-selected="true">All</button>
+          <button role="tab" class="filter" data-filter="Starters" aria-selected="false">Starters</button>
+          <button role="tab" class="filter" data-filter="Mains" aria-selected="false">Mains</button>
+          <button role="tab" class="filter" data-filter="Desserts" aria-selected="false">Desserts</button>
+          <button role="tab" class="filter" data-filter="Drinks" aria-selected="false">Drinks</button>
+        </div>
+        <p class="menu__tag">Good food brings people closer</p>
+      </div>
+      <div class="grid" id="grid"></div>
+    </section>
+
+    <!-- Story -->
+    <section class="story" id="story">
+      <p class="eyebrow reveal">Our story</p>
+      <h2 class="story__title reveal-words">A small kitchen with a slow broth, and a habit of turning the bowl to see it from every side.</h2>
+      <div class="story__stats">
+        <div class="stat reveal"><span class="stat__num" data-count="12">0</span><span class="stat__unit">hrs</span><p>Our tonkotsu-miso broth simmers overnight, every night.</p></div>
+        <div class="stat reveal"><span class="stat__num" data-count="48">0</span><span class="stat__unit">hrs</span><p>Fresh noodles rest two days before they meet the bowl.</p></div>
+        <div class="stat reveal"><span class="stat__num" data-count="3">0</span><span class="stat__unit">gens</span><p>Recipes passed between three generations of cooks.</p></div>
+      </div>
+    </section>
+
+    <!-- Reservations -->
+    <section class="reserve" id="reserve">
+      <div class="reserve__copy">
+        <p class="eyebrow reveal">Reservations</p>
+        <h2 class="reserve__title reveal">Pull up a chair.</h2>
+        <p class="reveal">Open Tuesday to Sunday, 12–3pm and 5–11pm.<br>Walk-ins welcome at the counter.</p>
+      </div>
+      <form class="reserve__form reveal" novalidate>
+        <label class="field"><span>Name</span><input name="name" required autocomplete="name" placeholder="Your name"></label>
+        <label class="field"><span>Date</span><input name="date" type="date" required></label>
+        <label class="field"><span>Time</span>
+          <select name="time" required>
+            <option>12:00</option><option>13:00</option><option>14:00</option>
+            <option>17:30</option><option selected>19:00</option><option>20:30</option><option>21:30</option>
+          </select>
+        </label>
+        <div class="field"><span>Guests</span>
+          <div class="stepper">
+            <button type="button" data-step="-1" aria-label="Fewer guests">−</button>
+            <output name="guests">2</output>
+            <button type="button" data-step="1" aria-label="More guests">+</button>
+          </div>
+        </div>
+        <button class="btn btn--primary btn--lg btn--block" type="submit">Book a table</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <a class="logo" href="#/"><span class="logo__word">Hotem</span><span class="logo__mark" aria-hidden="true">食</span></a>
+      <p>12 Lantern Lane · hello@hotem.example</p>
+      <p class="footer__small">Images and dishes are a design demo.</p>
+    </footer>
+  </main>
+
+  <!-- Dish detail -->
+  <section class="dish" id="dish" hidden aria-live="polite">
+    <div class="dish__left">
+      <a class="back" href="#menu" data-section="menu">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+        Back to menu
+      </a>
+      <div class="dish__thumbs" role="tablist" aria-label="Views"></div>
+      <div class="dish__stage">
+        <div class="rotator rotator--dish" data-rotator>
+          <div class="rotator__float">
+            <div class="rotator__tilt">
+              <img class="dish__img" alt="" draggable="false">
+              <span class="rotator__shine"></span>
+              <div class="hotspots"></div>
+            </div>
+          </div>
+          <span class="rotator__shadow"></span>
+        </div>
+        <p class="dish__hint">
+          <svg viewBox="0 0 32 32" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4v24M12 8l4-4 4 4M12 24l4 4 4-4"/><path d="M9 12c-3 1-5 2.4-5 4s2 3 5 4M23 12c3 1 5 2.4 5 4s-2 3-5 4"/></svg>
+          Drag to rotate
+        </p>
+      </div>
+    </div>
+    <div class="dish__info">
+      <p class="eyebrow dish__cat"></p>
+      <h1 class="dish__name"></h1>
+      <p class="dish__price"></p>
+      <p class="dish__desc"></p>
+      <div class="dish__row dish__spice">
+        <span><strong>Spicy level:</strong> <span class="spice-num"></span></span>
+        <span class="chilis" aria-hidden="true"></span>
+      </div>
+      <div class="dish__nutrition">
+        <p><strong>Nutrition</strong> <span class="muted">(per serving)</span></p>
+        <dl></dl>
+      </div>
+      <button class="btn btn--primary btn--xl btn--block add-btn">
+        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 10V7a3 3 0 0 1 6 0v3"/></svg>
+        <span>Add to order</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Cart drawer -->
+  <div class="scrim" data-action="close"></div>
+  <aside class="drawer" aria-label="Your order" aria-hidden="true">
+    <div class="drawer__head">
+      <h2>Your order</h2>
+      <button class="icon-btn" data-action="close" aria-label="Close">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <ul class="drawer__list"></ul>
+    <div class="drawer__empty">
+      <span class="logo__mark">食</span>
+      <p>Your order is empty.<br>Find something you love on the menu.</p>
+    </div>
+    <div class="drawer__foot">
+      <div class="drawer__total"><span>Subtotal</span><strong class="total">$0</strong></div>
+      <button class="btn btn--primary btn--lg btn--block checkout">Place order</button>
+    </div>
+  </aside>
+
+  <!-- Search -->
+  <div class="search" aria-hidden="true">
+    <div class="search__box">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></svg>
+      <input type="search" placeholder="Search ramen, bao, mochi…" aria-label="Search dishes">
+      <button class="icon-btn" data-action="close" aria-label="Close search">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <ul class="search__results"></ul>
+  </div>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
